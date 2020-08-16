@@ -1,0 +1,38 @@
+.main-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: $background;
+}
+
+.main-header {
+  position: relative;
+  width: 100%;
+  height: 156px;
+  background-color: $primary;
+
+  .header-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .shape {
+      position: absolute;
+      width: 264px;
+      height: 824px;
+      background: #63baba;
+      border-radius: 252px;
+      transform: rotate(-135deg);
+
+      &.s1 {
+        top: -140px;
+      }
+      &.s2 {
+        top: -146px;
+        left: -369px;
+      }
+    }
+  }
+}

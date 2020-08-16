@@ -1,0 +1,13 @@
+.history/**
+*.ttf
+*.gif
+*.css
+*.woff*
+*.svg
+*.eot
+*.md
+
+.vscode/
+
+devextreme/
+vendor/

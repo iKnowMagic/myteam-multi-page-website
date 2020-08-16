@@ -1,0 +1,8 @@
+dist/
+tests/coverage/
+.history/
+extensions.json
+.storybook
+storybook-static
+*.vue.snippet
+vendor/
