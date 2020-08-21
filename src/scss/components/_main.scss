@@ -34,7 +34,30 @@
         top: -146px;
         left: -369px;
       }
+      &.d1 {
+        top: -283px;
+        left: -248px;
+      }
+      &.d2 {
+        top: -660px;
+        left: 496px;
+      }
     }
+  }
+}
+
+.shapes-s {
+  position: absolute;
+  right: 293px;
+
+  @media (max-width: $md) {
+    left: 0;
+  }
+}
+
+.shapes-d {
+  @media (max-width: $md) {
+    display: none;
   }
 }
 
@@ -43,4 +66,8 @@
   flex-direction: column;
   width: 100%;
   padding: 56px 24px;
+
+  @media (min-width: $md) {
+    padding: 70px 124px;
+  }
 }

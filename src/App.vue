@@ -2,8 +2,14 @@
   <div class="main-container">
     <div class="main-header">
       <div class="header-shapes">
-        <div class="shape s1"></div>
-        <div class="shape s2"></div>
+        <div class="shapes-d">
+          <div class="shape d1"></div>
+          <div class="shape d2"></div>
+        </div>
+        <div class="shapes-s">
+          <div class="shape s1"></div>
+          <div class="shape s2"></div>
+        </div>
       </div>
     </div>
     <div class="main-body">

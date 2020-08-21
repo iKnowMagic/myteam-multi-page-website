@@ -1,9 +1,9 @@
 <template>
-  <div class="job-listing">
+  <div class="job-listing" :class="{ featured: job.featured }">
+    <div class="job-logo">
+      <img :src="job.logo" />
+    </div>
     <div class="job-listing-left">
-      <div class="job-logo">
-        <img :src="job.logo" />
-      </div>
       <div class="job-info">
         <div class="job-info-company">
           {{ job.company }}
