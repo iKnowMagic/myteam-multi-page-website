@@ -36,7 +36,7 @@
     </div>
     <div class="job-listing-right">
       <div class="job-tags">
-        <div class="tag">
+        <div class="tag" @click="addFilterTag(job.role)">
           {{ job.role }}
         </div>
         <div class="tag" @click="addFilterTag(job.level)">
