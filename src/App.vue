@@ -69,6 +69,9 @@ export default {
       for (const language of job.languages) {
         if (_includes(this.filterTags, language)) return true
       }
+      for (const tool of job.tools) {
+        if (_includes(this.filterTags, tool)) return true
+      }
       return false
     },
     deleteFilterTag(filterTag: string) {

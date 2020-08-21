@@ -47,6 +47,11 @@
             {{ language }}
           </div>
         </template>
+        <template v-for="tool in job.tools">
+          <div :key="tool" class="tag" @click="addFilterTag(tool)">
+            {{ tool }}
+          </div>
+        </template>
       </div>
     </div>
   </div>
