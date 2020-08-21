@@ -19,7 +19,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?41587232#fontello') format('svg');
+    src: url('../font/fontello.svg?58296278#fontello') format('svg');
   }
 }
 */
@@ -72,6 +72,9 @@
 .icon-right-open::before {
   content: '\e802';
 } /* '' */
+.icon-cancel::before {
+  content: '\e803';
+} /* '' */
 .icon-angle-left::before {
   content: '\f104';
 } /* '' */

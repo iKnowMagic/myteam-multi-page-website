@@ -7,11 +7,43 @@
       </div>
     </div>
     <div class="main-body">
+      <div class="filters">
+        <div class="filter-tags">
+          <div class="filter-tag">
+            <div class="filter-tag-text">
+              Frontend
+            </div>
+            <div class="filter-tag-close">
+              <div class="icon-cancel"></div>
+            </div>
+          </div>
+          <div class="filter-tag">
+            <div class="filter-tag-text">
+              CSS
+            </div>
+            <div class="filter-tag-close">
+              <div class="icon-cancel"></div>
+            </div>
+          </div>
+          <div class="filter-tag">
+            <div class="filter-tag-text">
+              JavaScript
+            </div>
+            <div class="filter-tag-close">
+              <div class="icon-cancel"></div>
+            </div>
+          </div>
+        </div>
+        <div class="filter-clear">
+          <div class="btn-clear">
+            Clear
+          </div>
+        </div>
+      </div>
       <template v-for="job in jobListings">
         <job-listing :key="job.id" :job="job" />
       </template>
     </div>
-    <div class="main-footer"></div>
   </div>
 </template>
 
@@ -19,26 +51,21 @@
 // @flow
 
 import JobListing from '@/components/JobListing'
-import axios from 'axios'
+import { call, get } from 'vuex-pathify'
 
 export default {
   name: 'App',
   components: {
     JobListing
   },
-  data() {
-    return {
-      jobListings: undefined
-    }
+  computed: {
+    jobListings: get('jobs/jobListings')
   },
   mounted() {
     this.getJobListings()
   },
   methods: {
-    async getJobListings() {
-      const { data } = await axios.get(`/data.json`)
-      this.jobListings = data
-    }
+    getJobListings: call('jobs/getJobListings')
   }
 }
 </script>
