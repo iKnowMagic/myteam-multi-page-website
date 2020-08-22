@@ -51,6 +51,11 @@
     width: 88px;
     height: 88px;
     margin: 0 24px 0 14px;
+
+    img {
+      width: 88px;
+      height: 88px;
+    }
   }
 }
 
@@ -151,6 +156,10 @@
   flex-wrap: wrap;
   padding-top: 16px;
   margin-top: 2px;
+
+  @media (min-width: $md) {
+    justify-content: flex-end;
+  }
 
   .tag {
     padding: 8px;
