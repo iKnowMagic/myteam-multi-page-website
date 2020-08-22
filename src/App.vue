@@ -46,7 +46,8 @@ import JobListing from '@/components/JobListing'
 import { call, get, sync } from 'vuex-pathify'
 
 import _cloneDeep from 'lodash/cloneDeep'
-import _includes from 'lodash/includes'
+import _difference from 'lodash/difference'
+import _intersection from 'lodash/intersection'
 
 export default {
   name: 'App',
@@ -64,15 +65,16 @@ export default {
     getJobListings: call('jobs/getJobListings'),
     isListingIncluded(job) {
       if (this.filterTags.length === 0) return true
-      if (_includes(this.filterTags, job.role)) return true
-      if (_includes(this.filterTags, job.level)) return true
-      for (const language of job.languages) {
-        if (_includes(this.filterTags, language)) return true
-      }
-      for (const tool of job.tools) {
-        if (_includes(this.filterTags, tool)) return true
-      }
-      return false
+      const common = _intersection(this.filterTags, this.getJobFeatures(job))
+      return common.length === this.filterTags.length
+    },
+    getJobFeatures(job) {
+      const result = []
+      result.push(job.role)
+      result.push(job.level)
+      result.push(...job.languages)
+      result.push(...job.tools)
+      return result
     },
     deleteFilterTag(filterTag: string) {
       const filterTags = _cloneDeep(this.filterTags)
