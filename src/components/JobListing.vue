@@ -1,7 +1,7 @@
 <template>
   <div class="job-listing" :class="{ featured: job.featured }">
     <div class="job-logo">
-      <img :src="job.logo" />
+      <img :src="job.logo" :alt="job.company" />
     </div>
     <div class="job-listing-left">
       <div class="job-info">
