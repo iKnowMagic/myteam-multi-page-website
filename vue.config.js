@@ -1,6 +1,6 @@
 module.exports = {
   configureWebpack: {
-    name: 'Job Listings With Filtering'
+    name: 'myteam'
     /**
      * https://webpack.js.org/configuration/devtool/#devtool
      * https://blog.scottlogic.com/2017/11/01/webpack-source-map-options-quick-guide.html
