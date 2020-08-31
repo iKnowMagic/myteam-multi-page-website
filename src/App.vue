@@ -8,24 +8,38 @@
         <img src="@/assets/images/icon-hamburger.svg" alt="logo" />
       </div>
     </div>
-    <div class="main-body"></div>
+    <div class="main-body">
+      <router-view />
+    </div>
+    <get-started />
+    <div class="main-footer">
+      <div class="main-footer-logo">
+        <img src="@/assets/images/logo.svg" alt="logo" />
+      </div>
+      <div class="main-footer-links">
+        <router-link :to="{ name: 'Home' }">home</router-link>
+        <router-link :to="{ name: 'About' }">about</router-link>
+      </div>
+      <div class="main-footer-address">
+        987 Hillcrest Lane
+        <br />
+        Irvine, CA
+        <br />
+        California 92714
+        <br />
+        Call Us : 949-833-7432
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 // @flow
 
-import { call, get, sync } from 'vuex-pathify'
-
-import _cloneDeep from 'lodash/cloneDeep'
-import _difference from 'lodash/difference'
-import _intersection from 'lodash/intersection'
+import GetStarted from '@/components/GetStarted'
 
 export default {
   name: 'App',
-  components: {},
-  computed: {},
-  mounted() {},
-  methods: {}
+  components: { GetStarted }
 }
 </script>

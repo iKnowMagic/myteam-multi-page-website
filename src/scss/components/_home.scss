@@ -1,0 +1,99 @@
+.build {
+  padding: 56px 24px 64px;
+  background-color: $sacramento-state-green;
+  background-image: url('~@/assets/images/bg-pattern-home-3.svg');
+  background-repeat: no-repeat;
+  background-position: right -100px top;
+  .build-intro {
+    padding-right: 111px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+
+    &::before {
+      display: block;
+      width: 50px;
+      height: 4px;
+      margin-bottom: 32px;
+      content: '';
+      background-color: $light-coral;
+    }
+  }
+}
+
+.build-box {
+  padding-top: 75px;
+  margin-top: 56px;
+  text-align: center;
+  h3 {
+    color: $light-coral;
+  }
+  .build-text {
+    line-height: 25px;
+    color: rgba($white, 0.8);
+  }
+
+  background-repeat: no-repeat;
+  background-position: center top;
+  &.icon-person {
+    background-image: url('~@/assets/images/icon-person.svg');
+  }
+  &.icon-cog {
+    background-image: url('~@/assets/images/icon-cog.svg');
+  }
+  &.icon-chart {
+    background-image: url('~@/assets/images/icon-chart.svg');
+  }
+}
+
+.delivering {
+  padding-top: 140px;
+  padding-bottom: 164px;
+  text-align: center;
+  background-color: $deep-jungle-green;
+  background-image: url('~@/assets/images/bg-pattern-home-4-about-3.svg'),
+    url('~@/assets/images/bg-pattern-home-5.svg');
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+
+  .delivering-intro {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    .delivering-intro-accent {
+      color: $rapture-blue;
+    }
+  }
+  .delivering-box {
+    padding-top: 36px;
+    margin-top: 48px;
+    background-image: url('~@/assets/images/icon-quotes.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  .delivering-text {
+    margin-bottom: 16px;
+  }
+  .delivering-autor {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: $rapture-blue;
+  }
+  .delivering-autor-title {
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 18px;
+  }
+  .delivering-autor-avatar {
+    margin-top: 16px;
+    img {
+      width: 62px;
+      height: 62px;
+      border: 2px solid #c4fffe;
+      border-radius: 50%;
+    }
+  }
+}

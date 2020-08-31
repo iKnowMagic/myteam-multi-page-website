@@ -1,0 +1,23 @@
+.main-footer {
+  padding: 66px 24px 64px;
+  text-align: center;
+  background-color: $dark-green;
+
+  .main-footer-logo {
+    img {
+      width: 96px;
+      height: 24px;
+    }
+  }
+  .main-footer-links {
+    padding-bottom: 24px;
+    a {
+      padding: 0 12px;
+      color: $white;
+      text-decoration: none;
+    }
+  }
+  .main-footer-address {
+    color: rgba($white, 0.6);
+  }
+}

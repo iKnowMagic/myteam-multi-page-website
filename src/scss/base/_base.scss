@@ -8,8 +8,9 @@ body {
   min-width: $sm;
   height: 100%;
   font-family: Livvic, sans-serif;
-  font-size: 15px / 25px;
+  font-size: 15px;
   font-weight: 600;
+  line-height: 25px;
   background-color: #fafafa;
 }
 
@@ -26,8 +27,9 @@ h2 {
   font-weight: 700;
 }
 h3 {
-  font-size: 18px / 28px;
+  font-size: 32px;
   font-weight: 700;
+  line-height: 32px;
 }
 .body-1 {
   font-size: 18px / 28px;

@@ -1,0 +1,27 @@
+.intro {
+  padding-bottom: 197px;
+  background-image: url('~@/assets/images/bg-pattern-home-2.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.intro-title {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+
+  > div {
+    display: inline-block;
+  }
+}
+
+.intro-title-accent {
+  color: $light-coral;
+}
+
+.intro-text {
+  margin: 18px 0;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+}
