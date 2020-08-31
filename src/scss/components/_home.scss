@@ -1,5 +1,5 @@
 .build {
-  padding: 56px 24px 64px;
+  padding: 62px 24px 64px;
   background-color: $sacramento-state-green;
   background-image: url('~@/assets/images/bg-pattern-home-3.svg');
   background-repeat: no-repeat;
@@ -22,13 +22,17 @@
 }
 
 .build-box {
-  padding-top: 75px;
-  margin-top: 56px;
+  padding-top: 90px;
+  margin-top: 58px;
   text-align: center;
-  h3 {
+  .build-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
     color: $light-coral;
   }
   .build-text {
+    margin-top: 7px;
     line-height: 25px;
     color: rgba($white, 0.8);
   }
@@ -46,9 +50,13 @@
   }
 }
 
+.build-box + .build-box {
+  margin-top: 47px;
+}
+
 .delivering {
-  padding-top: 140px;
-  padding-bottom: 164px;
+  padding-top: 135px;
+  padding-bottom: 160px;
   text-align: center;
   background-color: $deep-jungle-green;
   background-image: url('~@/assets/images/bg-pattern-home-4-about-3.svg'),
@@ -65,15 +73,19 @@
     }
   }
   .delivering-box {
-    padding-top: 36px;
+    padding-top: 40px;
     margin-top: 48px;
     background-image: url('~@/assets/images/icon-quotes.svg');
     background-repeat: no-repeat;
     background-position: center top;
   }
 
+  .delivering-box + .delivering-box {
+    margin-top: 36px;
+  }
+
   .delivering-text {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
   .delivering-autor {
     font-size: 18px;

@@ -29,6 +29,14 @@
         <br />
         Call Us : 949-833-7432
       </div>
+      <div class="main-footer-social">
+        <img src="@/assets/images/icon-facebook.svg" alt="Facebook" />
+        <img src="@/assets/images/icon-pinterest.svg" alt="Pinterest" />
+        <img src="@/assets/images/icon-twitter.svg" alt="Twitter" />
+      </div>
+      <div class="main-footer-copy">
+        Copyright 2020. All Rights Reserved.
+      </div>
     </div>
   </div>
 </template>

@@ -21,27 +21,28 @@
         Build & manage distributed teams like no one else.
       </div>
       <div class="build-box icon-person">
-        <h3>
+        <div class="build-title">
           Experienced Individuals
-        </h3>
+        </div>
+
         <div class="build-text">
           Our network is made up of highly experienced professionals who are
           passionate about what they do.
         </div>
       </div>
       <div class="build-box icon-cog">
-        <h3>
+        <div class="build-title">
           Easy to Implement
-        </h3>
+        </div>
         <div class="build-text">
           Our processes have been refined over years of implementation meaning
           our teams always deliver.
         </div>
       </div>
       <div class="build-box icon-chart">
-        <h3>
+        <div class="build-title">
           Enhanced Productivity
-        </h3>
+        </div>
         <div class="build-text">
           Our customized platform with in-built analytics helps you manage your
           distributed teams.
@@ -56,6 +57,18 @@
         </span>
       </div>
 
+      <div class="delivering-box">
+        <div class="delivering-text">
+          “The team perfectly fit the specialized skill set required. They
+          focused on the most essential features helping us launch the platform
+          eight months faster than planned.”
+        </div>
+        <div class="delivering-autor">Kady Baker</div>
+        <div class="delivering-autor-title">Product Manager of Bookmark</div>
+        <div class="delivering-autor-avatar">
+          <img src="@/assets/images/avatar-kady.jpg" />
+        </div>
+      </div>
       <div class="delivering-box">
         <div class="delivering-text">
           “We needed to automate our entire onboarding process. The team came in
