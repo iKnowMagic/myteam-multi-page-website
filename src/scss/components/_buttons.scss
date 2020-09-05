@@ -1,10 +1,28 @@
-.btn-dark {
+.btn {
   padding: 9px 30px 8px;
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
-  color: $sacramento-state-green;
+  cursor: pointer;
   background: transparent;
-  border: 2px solid $sacramento-state-green;
+  border: 2px solid transparent;
   border-radius: 24px;
+}
+
+.btn-dark {
+  @extend .btn;
+
+  color: $sacramento-state-green;
+  border-color: $sacramento-state-green;
+}
+.btn-light {
+  @extend .btn;
+
+  color: #fff;
+  border-color: #fff;
+
+  &:hover {
+    color: $sacramento-state-green;
+    background-color: #fff;
+  }
 }

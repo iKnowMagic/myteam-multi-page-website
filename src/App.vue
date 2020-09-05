@@ -4,7 +4,7 @@
       <div class="main-header-logo">
         <img src="@/assets/images/logo.svg" alt="logo" />
       </div>
-      <div class="main-header-menu-trigger">
+      <div class="main-header-menu-trigger" @click="$root.$emit('toggleMenu')">
         <img src="@/assets/images/icon-hamburger.svg" alt="logo" />
       </div>
     </div>
@@ -38,6 +38,8 @@
         Copyright 2020. All Rights Reserved.
       </div>
     </div>
+
+    <mobile-menu />
   </div>
 </template>
 
@@ -45,9 +47,10 @@
 // @flow
 
 import GetStarted from '@/components/GetStarted'
+import MobileMenu from '@/components/MobileMenu'
 
 export default {
   name: 'App',
-  components: { GetStarted }
+  components: { GetStarted, MobileMenu }
 }
 </script>
