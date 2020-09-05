@@ -13,9 +13,20 @@
           </div>
         </div>
         <div class="mobile-menu-body">
-          <router-link :to="{ name: 'Home' }">home</router-link>
-          <router-link :to="{ name: 'Home' }">about</router-link>
-          <button class="btn-light">contact us</button>
+          <router-link :to="{ name: 'Home' }" @click.native="visible = false">
+            home
+          </router-link>
+          <router-link :to="{ name: 'About' }" @click.native="visible = false">
+            about
+          </router-link>
+          <router-link
+            :to="{ name: 'Contact' }"
+            class="btn-light"
+            tag="button"
+            @click.native="visible = false"
+          >
+            contact us
+          </router-link>
         </div>
       </div>
     </transition>
@@ -29,7 +40,7 @@ export default {
   name: 'MobileMenu',
   data() {
     return {
-      visible: false
+      visible: true
     }
   },
   created() {

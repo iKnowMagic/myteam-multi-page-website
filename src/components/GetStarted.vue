@@ -1,9 +1,9 @@
 <template>
   <section class="get-started">
     <div class="get-started-text">Ready to get started?</div>
-    <button class="btn-dark">
+    <router-link :to="{ name: 'Contact' }" class="btn-dark" tag="button">
       contact us
-    </button>
+    </router-link>
   </section>
 </template>
 
