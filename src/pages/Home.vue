@@ -103,21 +103,20 @@
         </div>
       </div>
     </section>
+    <get-started />
   </div>
 </template>
 
 <script>
 // @flow
 
-import { call, get, sync } from 'vuex-pathify'
-
-import _cloneDeep from 'lodash/cloneDeep'
-import _difference from 'lodash/difference'
-import _intersection from 'lodash/intersection'
+import GetStarted from '@/components/GetStarted'
 
 export default {
   name: 'Home',
-  components: {},
+  components: {
+    GetStarted
+  },
   computed: {},
   mounted() {},
   methods: {}

@@ -137,13 +137,19 @@
         />
       </div>
     </section>
+    <get-started />
   </div>
 </template>
 
 <script>
 // @flow
 
+import GetStarted from '@/components/GetStarted'
+
 export default {
-  name: 'About'
+  name: 'About',
+  components: {
+    GetStarted
+  }
 }
 </script>

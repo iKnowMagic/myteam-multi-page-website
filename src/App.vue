@@ -11,7 +11,7 @@
     <div class="main-body">
       <router-view />
     </div>
-    <get-started />
+
     <div class="main-footer">
       <div class="main-footer-logo">
         <img src="@/assets/images/logo.svg" alt="logo" />
@@ -46,11 +46,10 @@
 <script>
 // @flow
 
-import GetStarted from '@/components/GetStarted'
 import MobileMenu from '@/components/MobileMenu'
 
 export default {
   name: 'App',
-  components: { GetStarted, MobileMenu }
+  components: { MobileMenu }
 }
 </script>

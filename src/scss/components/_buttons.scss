@@ -7,6 +7,7 @@
   background: transparent;
   border: 2px solid transparent;
   border-radius: 24px;
+  outline: none;
 }
 
 .btn-dark {
@@ -25,4 +26,11 @@
     color: $sacramento-state-green;
     background-color: #fff;
   }
+}
+.btn-secondary {
+  @extend .btn;
+
+  font-weight: 500;
+  color: $deep-jungle-green;
+  background-color: #fff;
 }
