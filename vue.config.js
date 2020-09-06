@@ -1,3 +1,5 @@
+const globImporter = require('node-sass-glob-importer')
+
 module.exports = {
   configureWebpack: {
     name: 'myteam',
@@ -34,5 +36,15 @@ module.exports = {
       .options({
         name: 'assets/[name].[hash:8].[ext]'
       })
+  },
+  css: {
+    sourceMap: process.env.NODE_ENV !== 'production',
+    loaderOptions: {
+      scss: {
+        sassOptions: {
+          importer: globImporter()
+        }
+      }
+    }
   }
 }

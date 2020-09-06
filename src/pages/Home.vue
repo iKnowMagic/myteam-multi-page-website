@@ -66,7 +66,10 @@
         <div class="delivering-autor">Kady Baker</div>
         <div class="delivering-autor-title">Product Manager of Bookmark</div>
         <div class="delivering-autor-avatar">
-          <img src="@/assets/images/avatar-kady.jpg" />
+          <img
+            src="@/assets/images/avatar-kady.jpg"
+            alt="Kady, Product Manager of Bookmark"
+          />
         </div>
       </div>
       <div class="delivering-box">
@@ -78,7 +81,10 @@
         <div class="delivering-autor">Aiysha Reese</div>
         <div class="delivering-autor-title">Founder of Manage</div>
         <div class="delivering-autor-avatar">
-          <img src="@/assets/images/avatar-aiysha.jpg" />
+          <img
+            src="@/assets/images/avatar-aiysha.jpg"
+            alt="Aiysha, Founder of Manage"
+          />
         </div>
       </div>
       <div class="delivering-box">
@@ -90,7 +96,10 @@
         <div class="delivering-autor">Arthur Clarke</div>
         <div class="delivering-autor-title">Co-founder of MyPhysio</div>
         <div class="delivering-autor-avatar">
-          <img src="@/assets/images/avatar-arthur.jpg" />
+          <img
+            src="@/assets/images/avatar-arthur.jpg"
+            alt="Arthur, Co-founder of MyPhysio"
+          />
         </div>
       </div>
     </section>

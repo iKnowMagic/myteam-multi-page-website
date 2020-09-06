@@ -40,7 +40,7 @@ export default {
   name: 'MobileMenu',
   data() {
     return {
-      visible: true
+      visible: false
     }
   },
   created() {

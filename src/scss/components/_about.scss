@@ -1,0 +1,138 @@
+.about {
+  .intro {
+    padding-bottom: 90px;
+    background-image: url('~@/assets/images/bg-pattern-about-1-mobile-nav-1.svg');
+    background-position: right -100px bottom -100px;
+  }
+}
+
+.meet {
+  padding: 88px 24px 117px;
+  background-color: $deep-jungle-green;
+  background-image: url('~@/assets/images/bg-pattern-about-2-contact-1.svg');
+  background-repeat: no-repeat;
+  background-position: left -100px top -100px;
+
+  .meet-title {
+    margin-bottom: 48px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+  }
+  .meet-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 24px 56px;
+    background-color: $sacramento-state-green;
+
+    .meet-avatar {
+      width: 96px;
+      height: 96px;
+      margin-bottom: 16px;
+      img {
+        width: 100%;
+        height: 100%;
+        border: 2px solid #c4fffe;
+        border-radius: 50%;
+      }
+    }
+    .meet-avatar-name {
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 28px;
+      color: $rapture-blue;
+    }
+    .meet-avatar-title {
+      font-size: 15px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 25px;
+    }
+    .meet-more {
+      position: absolute;
+      bottom: calc(-56px / 2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      cursor: pointer;
+      background-color: $light-coral;
+      border-radius: 50%;
+    }
+  }
+
+  .meet-box + .meet-box {
+    margin-top: 52px;
+  }
+
+  .meet-quote {
+    @extend .meet-box;
+
+    padding: 36px 46px 56px;
+    text-align: center;
+    background-color: $dark-green;
+
+    .meet-quote-name {
+      @extend .meet-avatar-name;
+    }
+    .meet-quote-text {
+      margin: 8px 0 24px;
+    }
+    .meet-quote-social {
+      img + img {
+        margin-left: 16px;
+      }
+    }
+    .meet-quote-close {
+      @extend .meet-more;
+
+      background-color: $rapture-blue;
+    }
+  }
+}
+
+.our-clients {
+  @extend .meet;
+
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 90px;
+  background-color: $sacramento-state-green;
+  background-image: url('~@/assets/images/bg-pattern-about-6.svg');
+  background-repeat: no-repeat;
+  background-position: left top;
+
+  .our-clients-title {
+    margin-bottom: 44px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .our-clients-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      max-width: 146px;
+      margin-top: 56px;
+
+      &:first-child {
+        margin-top: 20px;
+      }
+    }
+
+    .jakarta-post {
+      max-width: 160px;
+    }
+    .gadgets-now {
+      max-width: 90px;
+    }
+  }
+}
