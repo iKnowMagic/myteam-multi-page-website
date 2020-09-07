@@ -9,6 +9,10 @@
   align-items: center;
   justify-content: space-between;
 
+  @include mq($from: tablet) {
+    justify-content: flex-start;
+  }
+
   .main-header-logo {
     width: 128px;
     height: 32px;
@@ -23,6 +27,36 @@
   color: $white;
   .main-header-menu-trigger {
     cursor: pointer;
+    @include mq($from: tablet) {
+      display: none;
+    }
+  }
+
+  .main-header-nav-links,
+  .main-header-nav-button {
+    font-size: 18px;
+    line-height: 28px;
+
+    a + a {
+      margin-left: 40px;
+    }
+
+    @include mq($until: mobile) {
+      display: none;
+    }
+  }
+
+  .main-header-nav-links {
+    margin-left: 48px;
+  }
+
+  .main-header-nav-button {
+    margin-left: auto;
+  }
+
+  @include mq($from: tablet) {
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 
@@ -34,6 +68,11 @@ section {
     font-weight: 700;
     line-height: 32px;
     text-align: center;
+  }
+
+  @include mq($from: tablet) {
+    padding-right: 97px;
+    padding-left: 97px;
   }
 }
 

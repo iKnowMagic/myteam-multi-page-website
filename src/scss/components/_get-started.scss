@@ -6,10 +6,24 @@
   background-repeat: no-repeat;
   background-position: left bottom -21px;
 
+  @include mq($from: tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
   .get-started-text {
     margin-bottom: 24px;
     font-size: 32px;
     font-weight: 700;
     line-height: 32px;
+    color: $sacramento-state-green;
+
+    @include mq($from: tablet) {
+      margin: 0;
+    }
+  }
+  .btn-dark {
+    font-weight: 500;
   }
 }

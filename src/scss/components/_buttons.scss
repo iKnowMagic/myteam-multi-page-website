@@ -34,3 +34,9 @@
   color: $deep-jungle-green;
   background-color: #fff;
 }
+.btn-white {
+  @extend .btn;
+
+  color: #fff;
+  border-color: #fff;
+}

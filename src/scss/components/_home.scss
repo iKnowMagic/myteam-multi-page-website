@@ -1,12 +1,21 @@
 .build {
   padding-top: 62px;
+  padding-right: 22px;
   padding-bottom: 64px;
+  padding-left: 22px;
   background-color: $sacramento-state-green;
   background-image: url('~@/assets/images/bg-pattern-home-3.svg');
   background-repeat: no-repeat;
   background-position: right -100px top;
+
+  @include mq($from: tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
   .build-intro {
     padding-right: 111px;
+    margin-bottom: 55px;
     font-size: 32px;
     font-weight: 700;
     line-height: 32px;
@@ -23,10 +32,25 @@
 }
 
 .build-box {
-  padding-top: 90px;
-  margin-top: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
   text-align: center;
+
+  @include mq($from: tablet) {
+    flex-direction: row;
+    padding-right: 15px;
+  }
+
+  .build-message {
+    @include mq($from: tablet) {
+      text-align: left;
+    }
+  }
+
   .build-title {
+    margin-top: 18px;
     font-size: 18px;
     font-weight: bold;
     line-height: 28px;
@@ -37,17 +61,11 @@
     line-height: 25px;
     color: rgba($white, 0.8);
   }
-
-  background-repeat: no-repeat;
-  background-position: center top;
-  &.icon-person {
-    background-image: url('~@/assets/images/icon-person.svg');
-  }
-  &.icon-cog {
-    background-image: url('~@/assets/images/icon-cog.svg');
-  }
-  &.icon-chart {
-    background-image: url('~@/assets/images/icon-chart.svg');
+  .build-icon {
+    @include mq($from: tablet) {
+      width: 140px;
+      background-position: left top;
+    }
   }
 }
 
@@ -65,12 +83,22 @@
   background-repeat: no-repeat;
   background-position: left top, right bottom;
 
+  @include mq($from: tablet) {
+    padding-top: 100px;
+    padding-right: 98px;
+    padding-bottom: 100px;
+  }
+
   .delivering-intro {
     font-size: 32px;
     font-weight: 700;
     line-height: 32px;
     .delivering-intro-accent {
       color: $rapture-blue;
+    }
+
+    @include mq($from: tablet) {
+      padding: 0 50px;
     }
   }
   .delivering-box {
@@ -87,6 +115,7 @@
 
   .delivering-text {
     margin-bottom: 18px;
+    font-weight: 600;
   }
   .delivering-autor {
     font-size: 18px;

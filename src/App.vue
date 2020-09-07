@@ -7,6 +7,13 @@
       <div class="main-header-menu-trigger" @click="$root.$emit('toggleMenu')">
         <img src="@/assets/images/icon-hamburger.svg" alt="logo" />
       </div>
+      <div class="main-header-nav-links">
+        <router-link :to="{ name: 'Home' }">home</router-link>
+        <router-link :to="{ name: 'About' }">about</router-link>
+      </div>
+      <div class="main-header-nav-button">
+        <button class="btn-white">contact us</button>
+      </div>
     </div>
     <div class="main-body">
       <router-view />

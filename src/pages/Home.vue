@@ -18,26 +18,34 @@
       <div class="build-intro">
         Build & manage distributed teams like no one else.
       </div>
-      <div class="build-box icon-person">
-        <div class="build-title">Experienced Individuals</div>
-
-        <div class="build-text">
-          Our network is made up of highly experienced professionals who are
-          passionate about what they do.
+      <div class="build-box">
+        <div class="build-icon icon-person"></div>
+        <div class="build-message">
+          <div class="build-title">Experienced Individuals</div>
+          <div class="build-text">
+            Our network is made up of highly experienced professionals who are
+            passionate about what they do.
+          </div>
         </div>
       </div>
-      <div class="build-box icon-cog">
-        <div class="build-title">Easy to Implement</div>
-        <div class="build-text">
-          Our processes have been refined over years of implementation meaning
-          our teams always deliver.
+      <div class="build-box">
+        <div class="build-icon icon-cog"></div>
+        <div class="build-message">
+          <div class="build-title">Easy to Implement</div>
+          <div class="build-text">
+            Our processes have been refined over years of implementation meaning
+            our teams always deliver.
+          </div>
         </div>
       </div>
-      <div class="build-box icon-chart">
-        <div class="build-title">Enhanced Productivity</div>
-        <div class="build-text">
-          Our customized platform with in-built analytics helps you manage your
-          distributed teams.
+      <div class="build-box">
+        <div class="build-icon icon-chart"></div>
+        <div class="build-message">
+          <div class="build-title">Enhanced Productivity</div>
+          <div class="build-text">
+            Our customized platform with in-built analytics helps you manage
+            your distributed teams.
+          </div>
         </div>
       </div>
     </section>
