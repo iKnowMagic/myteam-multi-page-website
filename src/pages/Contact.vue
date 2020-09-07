@@ -4,9 +4,7 @@
       <div class="intro-title">
         Contact
 
-        <span class="intro-title-accent">
-          Ask us about
-        </span>
+        <span class="intro-title-accent">Ask us about</span>
       </div>
       <div class="contact-about">
         <div class="contact-about-item">
@@ -30,33 +28,23 @@
       </div>
       <form>
         <label>
-          <span>
-            Name
-          </span>
+          <span>Name</span>
           <input type="text" />
         </label>
         <label>
-          <span>
-            Email Address
-          </span>
+          <span>Email Address</span>
           <input type="email" />
         </label>
         <label>
-          <span>
-            Company Name
-          </span>
+          <span>Company Name</span>
           <input type="text" />
         </label>
         <label>
-          <span>
-            Title
-          </span>
+          <span>Title</span>
           <input type="text" />
         </label>
         <label>
-          <span>
-            Message
-          </span>
+          <span>Message</span>
           <textarea />
         </label>
         <div>

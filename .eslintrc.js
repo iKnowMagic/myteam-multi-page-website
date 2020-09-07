@@ -32,7 +32,9 @@ module.exports = {
         parser: 'babel-eslint',
         sourceType: 'module'
       },
-      env: { jest: true },
+      env: {
+        jest: true
+      },
       globals: {
         mount: false,
         shallowMount: false,
@@ -42,6 +44,15 @@ module.exports = {
       },
       rules: {
         'no-undef': 'off'
+      }
+    },
+    {
+      files: [
+        '**/__tests__/*.{j,t}s?(x)',
+        '**/tests/unit/**/*.spec.{j,t}s?(x)'
+      ],
+      env: {
+        jest: true
       }
     }
   ]

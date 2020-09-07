@@ -34,9 +34,7 @@
         <img src="@/assets/images/icon-pinterest.svg" alt="Pinterest" />
         <img src="@/assets/images/icon-twitter.svg" alt="Twitter" />
       </div>
-      <div class="main-footer-copy">
-        Copyright 2020. All Rights Reserved.
-      </div>
+      <div class="main-footer-copy">Copyright 2020. All Rights Reserved.</div>
     </div>
 
     <mobile-menu />
@@ -46,6 +44,7 @@
 <script>
 // @flow
 
+import '@/scss/app.scss'
 import MobileMenu from '@/components/MobileMenu'
 
 export default {

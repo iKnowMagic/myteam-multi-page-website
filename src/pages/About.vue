@@ -1,9 +1,7 @@
 <template>
   <div class="about">
     <section class="intro">
-      <div class="intro-title">
-        About
-      </div>
+      <div class="intro-title">About</div>
       <div class="intro-text">
         We help companies build dynamic teams made up of top global talent.
         Using our network of passionate professionals we drive innovation and
@@ -12,9 +10,7 @@
       </div>
     </section>
     <section class="meet">
-      <div class="meet-title">
-        Meet the directors
-      </div>
+      <div class="meet-title">Meet the directors</div>
       <div class="meet-box">
         <div class="meet-avatar">
           <img
@@ -22,12 +18,8 @@
             alt="Nikita, Founder & CEO"
           />
         </div>
-        <div class="meet-avatar-name">
-          Nikita Marks
-        </div>
-        <div class="meet-avatar-title">
-          Founder & CEO
-        </div>
+        <div class="meet-avatar-name">Nikita Marks</div>
+        <div class="meet-avatar-title">Founder & CEO</div>
         <div class="meet-more">
           <img src="@/assets/images/icon-cross.svg" alt="more" />
         </div>
@@ -39,12 +31,8 @@
             alt="Cristian, Co-Founder & CEO"
           />
         </div>
-        <div class="meet-avatar-name">
-          Cristian Duncan
-        </div>
-        <div class="meet-avatar-title">
-          Co-Founder & CEO
-        </div>
+        <div class="meet-avatar-name">Cristian Duncan</div>
+        <div class="meet-avatar-title">Co-Founder & CEO</div>
         <div class="meet-more">
           <img src="@/assets/images/icon-cross.svg" alt="more" />
         </div>
@@ -56,12 +44,8 @@
             alt="Cruz, Co-Founder & CEO"
           />
         </div>
-        <div class="meet-avatar-name">
-          Cruz Hamer
-        </div>
-        <div class="meet-avatar-title">
-          Co-Founder & CTO
-        </div>
+        <div class="meet-avatar-name">Cruz Hamer</div>
+        <div class="meet-avatar-title">Co-Founder & CTO</div>
         <div class="meet-more">
           <img src="@/assets/images/icon-cross.svg" alt="more" />
         </div>
@@ -73,12 +57,8 @@
             alt="Drake, Business Development Lead"
           />
         </div>
-        <div class="meet-avatar-name">
-          Drake Heaton
-        </div>
-        <div class="meet-avatar-title">
-          Business Development Lead
-        </div>
+        <div class="meet-avatar-name">Drake Heaton</div>
+        <div class="meet-avatar-title">Business Development Lead</div>
         <div class="meet-more">
           <img src="@/assets/images/icon-cross.svg" alt="more" />
         </div>
@@ -90,20 +70,14 @@
             alt="Griffin, Lead Marketing"
           />
         </div>
-        <div class="meet-avatar-name">
-          Griffin Wise
-        </div>
-        <div class="meet-avatar-title">
-          Lead Marketing
-        </div>
+        <div class="meet-avatar-name">Griffin Wise</div>
+        <div class="meet-avatar-title">Lead Marketing</div>
         <div class="meet-more">
           <img src="@/assets/images/icon-cross.svg" alt="more" />
         </div>
       </div>
       <div class="meet-quote">
-        <div class="meet-quote-name">
-          Aden Allan
-        </div>
+        <div class="meet-quote-name">Aden Allan</div>
         <div class="meet-quote-text">
           “Empowered teams create truly amazing products. Set the north star and
           let them follow it.”
@@ -118,9 +92,7 @@
       </div>
     </section>
     <section class="our-clients">
-      <div class="our-clients-title">
-        Some of our clients
-      </div>
+      <div class="our-clients-title">Some of our clients</div>
       <div class="our-clients-logos">
         <img src="@/assets/images/logo-the-verge.png" alt="The Verge" />
         <img

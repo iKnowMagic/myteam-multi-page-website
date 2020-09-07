@@ -6,9 +6,7 @@
         <br />
         best
 
-        <span class="intro-title-accent">
-          talent
-        </span>
+        <span class="intro-title-accent">talent</span>
       </div>
       <div class="intro-text">
         Finding the right people and building high performing teams can be hard.
@@ -21,9 +19,7 @@
         Build & manage distributed teams like no one else.
       </div>
       <div class="build-box icon-person">
-        <div class="build-title">
-          Experienced Individuals
-        </div>
+        <div class="build-title">Experienced Individuals</div>
 
         <div class="build-text">
           Our network is made up of highly experienced professionals who are
@@ -31,18 +27,14 @@
         </div>
       </div>
       <div class="build-box icon-cog">
-        <div class="build-title">
-          Easy to Implement
-        </div>
+        <div class="build-title">Easy to Implement</div>
         <div class="build-text">
           Our processes have been refined over years of implementation meaning
           our teams always deliver.
         </div>
       </div>
       <div class="build-box icon-chart">
-        <div class="build-title">
-          Enhanced Productivity
-        </div>
+        <div class="build-title">Enhanced Productivity</div>
         <div class="build-text">
           Our customized platform with in-built analytics helps you manage your
           distributed teams.
@@ -52,9 +44,7 @@
     <section class="delivering">
       <div class="delivering-intro">
         Delivering real results for top companies. Some of our
-        <span class="delivering-intro-accent">
-          success stories.
-        </span>
+        <span class="delivering-intro-accent">success stories.</span>
       </div>
 
       <div class="delivering-box">
