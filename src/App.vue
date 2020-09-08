@@ -12,7 +12,9 @@
         <router-link :to="{ name: 'About' }">about</router-link>
       </div>
       <div class="main-header-nav-button">
-        <button class="btn-white">contact us</button>
+        <router-link :to="{ name: 'Contact' }" tag="button" class="btn-white">
+          contact us
+        </router-link>
       </div>
     </div>
     <div class="main-body">
