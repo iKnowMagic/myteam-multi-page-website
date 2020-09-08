@@ -11,84 +11,43 @@
     </section>
     <section class="meet">
       <div class="meet-title">Meet the directors</div>
-      <div class="meet-box">
-        <div class="meet-avatar">
-          <img
-            src="@/assets/images/avatar-nikita.jpg"
-            alt="Nikita, Founder & CEO"
-          />
-        </div>
-        <div class="meet-avatar-name">Nikita Marks</div>
-        <div class="meet-avatar-title">Founder & CEO</div>
-        <div class="meet-more">
-          <img src="@/assets/images/icon-cross.svg" alt="more" />
-        </div>
-      </div>
-      <div class="meet-box">
-        <div class="meet-avatar">
-          <img
-            src="@/assets/images/avatar-christian.jpg"
-            alt="Cristian, Co-Founder & CEO"
-          />
-        </div>
-        <div class="meet-avatar-name">Cristian Duncan</div>
-        <div class="meet-avatar-title">Co-Founder & CEO</div>
-        <div class="meet-more">
-          <img src="@/assets/images/icon-cross.svg" alt="more" />
-        </div>
-      </div>
-      <div class="meet-box">
-        <div class="meet-avatar">
-          <img
-            src="@/assets/images/avatar-cruz.jpg"
-            alt="Cruz, Co-Founder & CEO"
-          />
-        </div>
-        <div class="meet-avatar-name">Cruz Hamer</div>
-        <div class="meet-avatar-title">Co-Founder & CTO</div>
-        <div class="meet-more">
-          <img src="@/assets/images/icon-cross.svg" alt="more" />
-        </div>
-      </div>
-      <div class="meet-box">
-        <div class="meet-avatar">
-          <img
-            src="@/assets/images/avatar-drake.jpg"
-            alt="Drake, Business Development Lead"
-          />
-        </div>
-        <div class="meet-avatar-name">Drake Heaton</div>
-        <div class="meet-avatar-title">Business Development Lead</div>
-        <div class="meet-more">
-          <img src="@/assets/images/icon-cross.svg" alt="more" />
-        </div>
-      </div>
-      <div class="meet-box">
-        <div class="meet-avatar">
-          <img
-            src="@/assets/images/avatar-griffin.jpg"
-            alt="Griffin, Lead Marketing"
-          />
-        </div>
-        <div class="meet-avatar-name">Griffin Wise</div>
-        <div class="meet-avatar-title">Lead Marketing</div>
-        <div class="meet-more">
-          <img src="@/assets/images/icon-cross.svg" alt="more" />
-        </div>
-      </div>
-      <div class="meet-quote">
-        <div class="meet-quote-name">Aden Allan</div>
-        <div class="meet-quote-text">
-          “Empowered teams create truly amazing products. Set the north star and
-          let them follow it.”
-        </div>
-        <div class="meet-quote-social">
-          <img src="@/assets/images/icon-twitter.svg" alt="Twitter" />
-          <img src="@/assets/images/icon-linkedin.svg" alt="LinkedIn" />
-        </div>
-        <div class="meet-quote-close">
-          <img src="@/assets/images/icon-close-2.svg" alt="close" />
-        </div>
+      <div class="meet-box-container">
+        <meet-box
+          :avatar="require('@/assets/images/avatar-nikita.jpg')"
+          avatar-name="Nikita Marks"
+          avatar-title="Founder & CEO"
+          quote="Empowered teams create truly amazing products. Set the north star and let them follow it."
+        />
+        <meet-box
+          :avatar="require('@/assets/images/avatar-christian.jpg')"
+          avatar-name="Christian Duncan"
+          avatar-title="Co-Founder & CEO"
+          quote="Empowered teams create truly amazing products. Set the north star and let them follow it."
+        />
+        <meet-box
+          :avatar="require('@/assets/images/avatar-cruz.jpg')"
+          avatar-name="Cruz Hamer"
+          avatar-title="Co-Founder & CTO"
+          quote="Empowered teams create truly amazing products. Set the north star and let them follow it."
+        />
+        <meet-box
+          :avatar="require('@/assets/images/avatar-drake.jpg')"
+          avatar-name="Drake Heaton"
+          avatar-title="Business Development Lead"
+          quote="Empowered teams create truly amazing products. Set the north star and let them follow it."
+        />
+        <meet-box
+          :avatar="require('@/assets/images/avatar-griffin.jpg')"
+          avatar-name="Griffin Wise"
+          avatar-title="Lead Marketing"
+          quote="Empowered teams create truly amazing products. Set the north star and let them follow it."
+        />
+        <meet-box
+          :avatar="require('@/assets/images/avatar-aden.jpg')"
+          avatar-name="Aden Allan"
+          avatar-title="Head of Talent"
+          quote="Empowered teams create truly amazing products. Set the north star and let them follow it."
+        />
       </div>
     </section>
     <section class="our-clients">
@@ -117,11 +76,13 @@
 // @flow
 
 import GetStarted from '@/components/GetStarted'
+import MeetBox from '@/components/MeetBox'
 
 export default {
   name: 'About',
   components: {
-    GetStarted
+    GetStarted,
+    MeetBox
   }
 }
 </script>

@@ -21,6 +21,19 @@
     line-height: 32px;
     text-align: center;
   }
+
+  .meet-box-container {
+    @include mq($from: tablet) {
+      display: grid;
+      grid-template-rows: 255px 255px 255px;
+      grid-template-columns: 281px 281px;
+      grid-row-gap: 76px;
+      grid-column-gap: 11px;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
   .meet-box {
     position: relative;
     display: flex;
@@ -63,17 +76,25 @@
       cursor: pointer;
       background-color: $light-coral;
       border-radius: 50%;
+
+      &.meet-more-expanded {
+        background-color: $rapture-blue;
+      }
     }
   }
 
   .meet-box + .meet-box {
     margin-top: 52px;
+
+    @include mq($from: tablet) {
+      margin-top: 0;
+    }
   }
 
   .meet-quote {
     @extend .meet-box;
 
-    padding: 36px 46px 56px;
+    padding: 36px 23px 56px;
     text-align: center;
     background-color: $dark-green;
 
@@ -84,7 +105,7 @@
       margin: 8px 0 24px;
     }
     .meet-quote-social {
-      img + img {
+      a + a {
         margin-left: 16px;
       }
     }

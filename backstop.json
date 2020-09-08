@@ -9,7 +9,7 @@
     {
       "label": "tablet",
       "width": 768,
-      "height": 3100
+      "height": 4000
     }
   ],
   "onBeforeScript": "tests/puppet/onBefore.js",
