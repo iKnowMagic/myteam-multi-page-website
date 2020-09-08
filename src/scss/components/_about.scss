@@ -124,9 +124,13 @@
   flex-direction: column;
   padding-bottom: 90px;
   background-color: $sacramento-state-green;
-  background-image: url('~@/assets/images/bg-pattern-about-6.svg');
+  background-image: url('~@/assets/images/bg-pattern-about-4.svg');
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: left -100px top -100px;
+  @include mq($from: tablet) {
+    padding-top: 113px;
+    background-position: left top -100px;
+  }
 
   .our-clients-title {
     margin-bottom: 44px;
@@ -134,27 +138,57 @@
     font-weight: 700;
     line-height: 32px;
     text-align: center;
+
+    @include mq($from: tablet) {
+      margin-bottom: 40px;
+    }
   }
 
   .our-clients-logos {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+
+    @include mq($from: tablet) {
+      flex-direction: row;
+      justify-content: center;
+    }
 
     img {
       max-width: 146px;
       margin-top: 56px;
 
+      @include mq($from: tablet) {
+        width: 100px;
+        margin-top: 0;
+      }
+
       &:first-child {
         margin-top: 20px;
+        @include mq($from: tablet) {
+          margin-top: 0;
+        }
+      }
+    }
+
+    @include mq($from: tablet) {
+      img + img {
+        margin-left: 50px;
       }
     }
 
     .jakarta-post {
       max-width: 160px;
+      @include mq($from: tablet) {
+        width: 120px;
+      }
     }
     .gadgets-now {
       max-width: 90px;
+      @include mq($from: tablet) {
+        width: 70px;
+      }
     }
   }
 }
