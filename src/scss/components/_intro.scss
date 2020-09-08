@@ -5,7 +5,9 @@
   background-position: bottom;
 
   @include mq($from: tablet) {
+    padding-top: 34px;
     padding-right: 160px;
+    padding-bottom: 230px;
     padding-left: 160px;
   }
 }
@@ -33,6 +35,10 @@
 .intro-text {
   margin: 18px 0;
   font-size: 15px;
+  font-weight: 600;
   line-height: 28px;
   text-align: center;
+  @include mq($from: tablet) {
+    margin: 24px 0;
+  }
 }

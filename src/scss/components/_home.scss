@@ -10,7 +10,9 @@
 
   @include mq($from: tablet) {
     padding-top: 100px;
+    padding-right: 97px;
     padding-bottom: 100px;
+    padding-left: 97px;
   }
 
   .build-intro {
@@ -19,6 +21,10 @@
     font-size: 32px;
     font-weight: 700;
     line-height: 32px;
+
+    @include mq($from: tablet) {
+      margin-bottom: 50px;
+    }
 
     &::before {
       display: block;
@@ -55,6 +61,10 @@
     font-weight: bold;
     line-height: 28px;
     color: $light-coral;
+
+    @include mq($from: tablet) {
+      margin-bottom: 10px;
+    }
   }
   .build-text {
     margin-top: 7px;
@@ -71,10 +81,14 @@
 
 .build-box + .build-box {
   margin-top: 47px;
+
+  @include mq($from: tablet) {
+    margin-top: 22px;
+  }
 }
 
 .delivering {
-  padding-top: 135px;
+  padding-top: 140px;
   padding-bottom: 160px;
   text-align: center;
   background-color: $deep-jungle-green;

@@ -4,6 +4,10 @@
   text-align: center;
   background-color: $dark-green;
 
+  @include mq($from: tablet) {
+    padding: 58px 35px 64px;
+  }
+
   .main-footer-logo {
     display: flex;
     justify-content: center;
@@ -50,7 +54,7 @@
     .main-footer-logo {
       display: flex;
       justify-content: flex-start;
-      margin-bottom: 45px;
+      margin-bottom: 52px;
       img {
         width: 96px;
         height: 24px;
@@ -73,12 +77,20 @@
       display: flex;
       justify-content: flex-end;
       text-align: right;
+
+      @include mq($from: tablet) {
+        margin-top: -126px;
+      }
     }
 
     .main-footer-social {
       display: flex;
       justify-content: flex-start;
       margin-top: 42px;
+
+      @include mq($from: tablet) {
+        margin-top: 37px;
+      }
 
       img + img {
         margin-left: 16px;
@@ -88,7 +100,9 @@
     .main-footer-copy {
       display: flex;
       justify-content: flex-end;
-      margin-top: -25px;
+      @include mq($from: tablet) {
+        margin-top: -27px;
+      }
     }
   }
 }
