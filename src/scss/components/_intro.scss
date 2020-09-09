@@ -40,5 +40,6 @@
   text-align: center;
   @include mq($from: tablet) {
     margin: 24px 0;
+    font-weight: 500;
   }
 }

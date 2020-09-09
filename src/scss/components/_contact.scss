@@ -1,7 +1,13 @@
 .contact {
+  background-color: $midnight-green;
+  @include mq($from: tablet) {
+    background-image: url('~@/assets/images/bg-pattern-about-2-contact-1.svg');
+    background-repeat: no-repeat;
+    background-position: left -100px top;
+  }
+
   .intro {
     padding-bottom: 89px;
-    background-color: $midnight-green;
     background-image: url('~@/assets/images/bg-pattern-contact-2.svg');
     background-position: right -100px bottom -111px;
   }
@@ -28,17 +34,15 @@
         background-repeat: no-repeat;
         &.person {
           background-image: url('~@/assets/images/icon-person.svg');
-          background-position: left 6px top 2px;
+          background-position: left top;
         }
         &.cog {
-          width: 143px;
           background-image: url('~@/assets/images/icon-cog.svg');
-          background-position: left 0 top 2px;
+          background-position: left top;
         }
         &.chart {
-          width: 105px;
           background-image: url('~@/assets/images/icon-chart.svg');
-          background-position: left 0 top 2px;
+          background-position: left top;
         }
       }
       .contact-about-item-text {

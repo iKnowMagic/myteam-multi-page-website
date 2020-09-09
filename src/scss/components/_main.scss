@@ -13,6 +13,7 @@
 
   @include mq($from: tablet) {
     justify-content: flex-start;
+    padding-top: 61px;
     font-weight: 600;
   }
 
