@@ -5,7 +5,7 @@
 html,
 body {
   width: 100%;
-  min-width: nth($mq-breakpoints, 1);
+  min-width: 375px;
   height: 100%;
   font-family: Livvic, sans-serif;
   font-size: 15px;
