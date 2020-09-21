@@ -1,11 +1,38 @@
 .about {
   font-weight: 600;
+  @include mq($from: desktop) {
+    margin-top: -8px;
+  }
+
   .intro {
     padding-bottom: 90px;
     background-image: url('~@/assets/images/bg-pattern-about-1-mobile-nav-1.svg');
     background-position: right -100px bottom -100px;
     @include mq($from: tablet) {
       background-position: right -100px bottom 0;
+    }
+    @include mq($from: desktop) {
+      align-items: flex-start;
+      padding-bottom: 120px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+      background-position: right -115px bottom 0;
+
+      .intro-title {
+        font-size: 64px;
+        line-height: 100px;
+      }
+      .intro-text {
+        width: 720px;
+
+        &::before {
+          position: static;
+          top: unset;
+          margin-bottom: 40px;
+          background-color: $light-coral;
+        }
+      }
     }
   }
 }
