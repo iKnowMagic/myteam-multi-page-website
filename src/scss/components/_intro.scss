@@ -10,6 +10,18 @@
     padding-bottom: 230px;
     padding-left: 160px;
   }
+  @include mq($from: desktop) {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 250px;
+    padding-left: 165px;
+    background-image: url('~@/assets/images/bg-pattern-home-1.svg'),
+      url('~@/assets/images/bg-pattern-home-2.svg');
+    background-position: left -100px top 50px, right 165px bottom;
+  }
 }
 
 .intro-title {
@@ -26,6 +38,11 @@
     font-size: 64px;
     line-height: 56px;
   }
+  @include mq($from: desktop) {
+    font-size: 100px;
+    line-height: 100px;
+    text-align: left;
+  }
 }
 
 .intro-title-accent {
@@ -41,5 +58,23 @@
   @include mq($from: tablet) {
     margin: 24px 0;
     font-weight: 500;
+  }
+  @include mq($from: desktop) {
+    width: 450px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+
+    &::before {
+      position: absolute;
+      top: 50px;
+      display: block;
+      width: 50px;
+      height: 4px;
+      content: '';
+      background: $rapture-blue;
+    }
   }
 }

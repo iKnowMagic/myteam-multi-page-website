@@ -10,6 +10,11 @@
       "label": "tablet",
       "width": 768,
       "height": 4000
+    },
+    {
+      "label": "desktop",
+      "width": 1440,
+      "height": 4000
     }
   ],
   "onBeforeScript": "tests/puppet/onBefore.js",
@@ -17,15 +22,15 @@
   "scenarios": [
     {
       "label": "Home",
-      "url": "http://localhost:8082"
+      "url": "http://localhost:8080"
     },
     {
       "label": "About",
-      "url": "http://localhost:8082/about"
+      "url": "http://localhost:8080/about"
     },
     {
       "label": "Contact",
-      "url": "http://localhost:8082/contact"
+      "url": "http://localhost:8080/contact"
     }
   ],
   "paths": {

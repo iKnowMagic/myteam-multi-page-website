@@ -8,6 +8,10 @@
     padding: 58px 35px 52px;
   }
 
+  @include mq($from: desktop) {
+    padding: 48px 165px;
+  }
+
   .main-footer-logo {
     display: flex;
     justify-content: center;
@@ -76,21 +80,14 @@
     .main-footer-address {
       display: flex;
       justify-content: flex-end;
+      margin-top: -126px;
       text-align: right;
-
-      @include mq($from: tablet) {
-        margin-top: -126px;
-      }
     }
 
     .main-footer-social {
       display: flex;
       justify-content: flex-start;
-      margin-top: 42px;
-
-      @include mq($from: tablet) {
-        margin-top: 37px;
-      }
+      margin-top: 37px;
 
       img + img {
         margin-left: 16px;
@@ -100,9 +97,44 @@
     .main-footer-copy {
       display: flex;
       justify-content: flex-end;
-      @include mq($from: tablet) {
-        margin-top: -27px;
+      margin-top: -27px;
+    }
+  }
+
+  @include mq($from: desktop) {
+    .main-footer-logo {
+      margin-bottom: 28px;
+
+      img {
+        width: 160px;
+        height: 40px;
       }
+    }
+    .main-footer-links {
+      margin-top: 0;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+
+      a + a {
+        padding-left: 40px;
+      }
+    }
+    .main-footer-address {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: -119px;
+      margin-left: 286px;
+      text-align: left;
+    }
+    .main-footer-social {
+      justify-content: flex-end;
+      margin-top: -100px;
+      margin-right: -16px;
+    }
+    .main-footer-copy {
+      margin-top: 51px;
+      margin-right: -20px;
     }
   }
 }
