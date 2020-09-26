@@ -53,14 +53,26 @@
     <section class="our-clients">
       <div class="our-clients-title">Some of our clients</div>
       <div class="our-clients-logos">
-        <img src="@/assets/images/logo-the-verge.png" alt="The Verge" />
+        <img
+          src="@/assets/images/logo-the-verge.png"
+          alt="The Verge"
+          class="the-verge"
+        />
         <img
           src="@/assets/images/logo-jakarta-post.png"
           alt="Jakarta Post"
           class="jakarta-post"
         />
-        <img src="@/assets/images/logo-the-guardian.png" alt="The Guardian" />
-        <img src="@/assets/images/logo-tech-radar.png" alt="Tech Radar" />
+        <img
+          src="@/assets/images/logo-the-guardian.png"
+          alt="The Guardian"
+          class="the-guardian"
+        />
+        <img
+          src="@/assets/images/logo-tech-radar.png"
+          alt="Tech Radar"
+          class="tech-radar"
+        />
         <img
           src="@/assets/images/logo-gadgets-now.png"
           alt="Gadgets Now"
