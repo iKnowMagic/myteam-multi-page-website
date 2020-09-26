@@ -55,6 +55,10 @@
     @include mq($until: mobile) {
       display: none;
     }
+
+    @include mq($from: mobile, $until: tablet) {
+      display: none;
+    }
     @include mq($from: desktop) {
       padding-right: 3px;
       margin-right: -16px;

@@ -1,28 +1,30 @@
 <template>
   <div class="contact">
     <section class="intro">
-      <div class="intro-title">
-        Contact
+      <div class="intro-contact">
+        <div class="intro-title">
+          Contact
 
-        <span class="intro-title-accent">Ask us about</span>
-      </div>
-      <div class="contact-about">
-        <div class="contact-about-item">
-          <div class="contact-about-item-image person"></div>
-          <div class="contact-about-item-text">
-            The quality of our talent network
-          </div>
+          <span class="intro-title-accent">Ask us about</span>
         </div>
-        <div class="contact-about-item">
-          <div class="contact-about-item-image cog"></div>
-          <div class="contact-about-item-text">
-            Usage & implementation of our software
+        <div class="contact-about">
+          <div class="contact-about-item">
+            <div class="contact-about-item-image person"></div>
+            <div class="contact-about-item-text">
+              The quality of our talent network
+            </div>
           </div>
-        </div>
-        <div class="contact-about-item">
-          <div class="contact-about-item-image chart"></div>
-          <div class="contact-about-item-text">
-            How we help drive innovation
+          <div class="contact-about-item">
+            <div class="contact-about-item-image cog"></div>
+            <div class="contact-about-item-text">
+              Usage & implementation of our software
+            </div>
+          </div>
+          <div class="contact-about-item">
+            <div class="contact-about-item-image chart"></div>
+            <div class="contact-about-item-text">
+              How we help drive innovation
+            </div>
           </div>
         </div>
       </div>
