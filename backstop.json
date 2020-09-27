@@ -22,15 +22,15 @@
   "scenarios": [
     {
       "label": "Home",
-      "url": "http://localhost:8080"
+      "url": "http://localhost:8081"
     },
     {
       "label": "About",
-      "url": "http://localhost:8080/about"
+      "url": "http://localhost:8081/about"
     },
     {
       "label": "Contact",
-      "url": "http://localhost:8080/contact"
+      "url": "http://localhost:8081/contact"
     }
   ],
   "paths": {

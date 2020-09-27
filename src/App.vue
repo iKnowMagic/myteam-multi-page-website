@@ -1,9 +1,10 @@
 <template>
   <div class="main-container">
     <div class="main-header">
-      <div class="main-header-logo">
+      <router-link :to="{ name: 'Home' }" tag="a" class="main-header-logo">
         <img src="@/assets/images/logo.svg" alt="logo" />
-      </div>
+      </router-link>
+
       <div class="main-header-menu-trigger" @click="$root.$emit('toggleMenu')">
         <img src="@/assets/images/icon-hamburger.svg" alt="logo" />
       </div>
