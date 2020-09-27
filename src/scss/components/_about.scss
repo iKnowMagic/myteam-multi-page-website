@@ -101,6 +101,7 @@
     align-items: center;
     padding: 32px 24px 56px;
     background-color: $sacramento-state-green;
+    transition: background-color 0.5s ease;
 
     .meet-avatar {
       width: 96px;
@@ -136,6 +137,7 @@
       cursor: pointer;
       background-color: $light-coral;
       border-radius: 50%;
+      transition: background-color 0.25s ease;
 
       &:hover {
         background-color: $rapture-blue;
@@ -143,6 +145,8 @@
 
       &.meet-more-expanded {
         background-color: $rapture-blue;
+        transition: background-color 0.25s ease;
+
         &:hover {
           background-color: $light-coral;
         }

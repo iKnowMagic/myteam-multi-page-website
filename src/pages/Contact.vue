@@ -30,32 +30,34 @@
       </div>
       <form>
         <label :class="{ error: $v.name.$error }">
-          <span>Name</span>
-
-          <input v-model.trim="$v.name.$model" type="text" />
+          <input v-model.trim="$v.name.$model" type="text" placeholder="Name" />
         </label>
 
         <label :class="{ error: $v.email.$error }">
-          <span>Email Address</span>
-
-          <input v-model.trim="$v.email.$model" type="email" />
+          <input
+            v-model.trim="$v.email.$model"
+            type="email"
+            placeholder="Email Address"
+          />
         </label>
 
         <label :class="{ error: $v.company.$error }">
-          <span>Company Name</span>
-
-          <input v-model.trim="$v.company.$model" type="text" />
+          <input
+            v-model.trim="$v.company.$model"
+            type="text"
+            placeholder="Company Name"
+          />
         </label>
 
         <label :class="{ error: $v.title.$error }">
-          <span>Title</span>
-
-          <input v-model.trim="$v.title.$model" type="text" />
+          <input
+            v-model.trim="$v.title.$model"
+            type="text"
+            placeholder="Title"
+          />
         </label>
         <label :class="['textarea', { error: $v.message.$error }]">
-          <span>Message</span>
-
-          <textarea v-model.trim="$v.message.$model" />
+          <textarea v-model.trim="$v.message.$model" placeholder="Message" />
         </label>
         <div>
           <button class="btn-secondary">submit</button>
