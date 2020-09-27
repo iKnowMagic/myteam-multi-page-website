@@ -2,11 +2,11 @@
   <div class="contact">
     <section class="intro">
       <div class="intro-contact">
-        <div class="intro-title">
+        <h2 class="intro-title">
           Contact
 
           <span class="intro-title-accent">Ask us about</span>
-        </div>
+        </h2>
         <div class="contact-about">
           <div class="contact-about-item">
             <div class="contact-about-item-image person"></div>

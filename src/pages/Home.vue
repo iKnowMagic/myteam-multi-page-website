@@ -1,13 +1,13 @@
 <template>
   <div class="home">
     <section class="intro">
-      <div class="intro-title">
+      <h2 class="intro-title">
         Find the
         <br />
         best
 
         <span class="intro-title-accent">talent</span>
-      </div>
+      </h2>
       <div class="intro-text">
         Finding the right people and building high performing teams can be hard.
         Most companies aren’t tapping into the abundance of global talent. We’re
@@ -15,9 +15,9 @@
       </div>
     </section>
     <section class="build">
-      <div class="build-intro">
+      <h2 class="build-intro">
         Build & manage distributed teams like no one else.
-      </div>
+      </h2>
       <div class="build-boxes">
         <div class="build-box">
           <div class="build-icon icon-person"></div>
@@ -52,10 +52,10 @@
       </div>
     </section>
     <section class="delivering">
-      <div class="delivering-intro">
+      <h2 class="delivering-intro">
         Delivering real results for top companies. Some of our
         <span class="delivering-intro-accent">success stories.</span>
-      </div>
+      </h2>
       <div class="delivering-boxes">
         <div class="delivering-box">
           <div class="delivering-text">

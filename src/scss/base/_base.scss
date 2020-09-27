@@ -19,19 +19,6 @@ body {
   display: flex;
 }
 
-h1 {
-  font-size: 100px / 100px;
-  font-weight: 700;
-}
-h2 {
-  font-size: 48px / 48px;
-  font-weight: 700;
-}
-h3 {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 32px;
-}
 .body-1 {
   font-size: 18px / 28px;
   font-weight: 600;
@@ -43,4 +30,12 @@ h3 {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+h2 {
+  @extend div;
+
+  padding: 0;
+  margin: 0;
+  line-height: inherit;
 }
