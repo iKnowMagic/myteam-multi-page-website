@@ -137,8 +137,15 @@
       background-color: $light-coral;
       border-radius: 50%;
 
+      &:hover {
+        background-color: $rapture-blue;
+      }
+
       &.meet-more-expanded {
         background-color: $rapture-blue;
+        &:hover {
+          background-color: $light-coral;
+        }
       }
     }
   }
@@ -165,6 +172,12 @@
       margin: 8px 0 24px;
     }
     .meet-quote-social {
+      a {
+        &:hover {
+          filter: invert(0.5) sepia(1) saturate(2) hue-rotate(-67deg);
+        }
+      }
+
       a + a {
         margin-left: 16px;
       }

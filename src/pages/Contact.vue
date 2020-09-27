@@ -29,25 +29,33 @@
         </div>
       </div>
       <form>
-        <label>
+        <label :class="{ error: $v.name.$error }">
           <span>Name</span>
-          <input type="text" />
+
+          <input v-model.trim="$v.name.$model" type="text" />
         </label>
-        <label>
+
+        <label :class="{ error: $v.email.$error }">
           <span>Email Address</span>
-          <input type="email" />
+
+          <input v-model.trim="$v.email.$model" type="email" />
         </label>
-        <label>
+
+        <label :class="{ error: $v.company.$error }">
           <span>Company Name</span>
-          <input type="text" />
+
+          <input v-model.trim="$v.company.$model" type="text" />
         </label>
-        <label>
+
+        <label :class="{ error: $v.title.$error }">
           <span>Title</span>
-          <input type="text" />
+
+          <input v-model.trim="$v.title.$model" type="text" />
         </label>
-        <label>
+        <label :class="['textarea', { error: $v.message.$error }]">
           <span>Message</span>
-          <textarea />
+
+          <textarea v-model.trim="$v.message.$model" />
         </label>
         <div>
           <button class="btn-secondary">submit</button>
@@ -60,7 +68,35 @@
 <script>
 // @flow
 
+import { required } from 'vuelidate/lib/validators'
+
 export default {
-  name: 'Contact'
+  name: 'Contact',
+  validations: {
+    name: {
+      required
+    },
+    email: {
+      required
+    },
+    company: {
+      required
+    },
+    title: {
+      required
+    },
+    message: {
+      required
+    }
+  },
+  data() {
+    return {
+      name: undefined,
+      email: undefined,
+      company: undefined,
+      title: undefined,
+      message: undefined
+    }
+  }
 }
 </script>

@@ -96,29 +96,72 @@
     }
 
     label {
+      position: relative;
       margin-top: 25px;
+
+      span {
+        display: block;
+        padding-left: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        color: rgba(#fff, 0.6);
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding-left: 16px;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid rgba(#fff, 0.8);
+        outline: none;
+      }
+      textarea {
+        min-height: 67px;
+        margin-bottom: 16px;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        input,
+        textarea {
+          border-color: $rapture-blue;
+        }
+        span {
+          color: #fff;
+        }
+      }
+
+      &.error {
+        input,
+        textarea {
+          border-color: $light-coral;
+          border-width: 1px;
+        }
+        span {
+          color: $light-coral;
+          opacity: 0.6;
+        }
+        &.textarea {
+          &::after {
+            margin-top: -20px;
+            margin-bottom: 20px;
+          }
+        }
+        &::after {
+          display: block;
+          padding-left: 16px;
+          font-size: 10px;
+          font-style: italic;
+          font-weight: bold;
+          line-height: 13px;
+          color: $light-coral;
+          content: 'This field is required';
+        }
+      }
     }
-    span {
-      display: block;
-      padding-left: 16px;
-      font-weight: 600;
-      line-height: 16px;
-      color: rgba(#fff, 0.6);
-    }
-    input,
-    textarea {
-      width: 100%;
-      padding-left: 16px;
-      color: #fff;
-      background-color: transparent;
-      border: none;
-      border-bottom: 2px solid rgba(#fff, 0.8);
-      outline: none;
-    }
-    textarea {
-      min-height: 67px;
-      margin-bottom: 16px;
-    }
+
     button {
       font-weight: 600;
     }
