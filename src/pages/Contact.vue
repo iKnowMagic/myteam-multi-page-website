@@ -28,37 +28,63 @@
           </div>
         </div>
       </div>
-      <form>
-        <label :class="{ error: $v.name.$error }">
-          <input v-model.trim="$v.name.$model" type="text" placeholder="Name" />
-        </label>
+      <form noValidate @submit.prevent="checkForm">
+        <div class="form-group" :class="[{ error: $v.name.$error }]">
+          <label>
+            <input
+              v-model.trim="$v.name.$model"
+              type="text"
+              placeholder="Name"
+            />
+          </label>
+          <span v-if="$v.name.$error">This field is required</span>
+        </div>
 
-        <label :class="{ error: $v.email.$error }">
-          <input
-            v-model.trim="$v.email.$model"
-            type="email"
-            placeholder="Email Address"
-          />
-        </label>
+        <div class="form-group" :class="[{ error: $v.email.$error }]">
+          <label>
+            <input
+              v-model.trim="$v.email.$model"
+              type="email"
+              placeholder="Email Address"
+            />
+          </label>
+          <span v-if="$v.email.$error && !$v.email.required">
+            This field is required
+          </span>
+          <span v-if="$v.email.$error && $v.email.required && !$v.email.email">
+            Invalid email address
+          </span>
+        </div>
 
-        <label :class="{ error: $v.company.$error }">
-          <input
-            v-model.trim="$v.company.$model"
-            type="text"
-            placeholder="Company Name"
-          />
-        </label>
+        <div class="form-group" :class="[{ error: $v.company.$error }]">
+          <label>
+            <input
+              v-model.trim="$v.company.$model"
+              type="text"
+              placeholder="Company Name"
+            />
+          </label>
+          <span v-if="$v.company.$error">This field is required</span>
+        </div>
 
-        <label :class="{ error: $v.title.$error }">
-          <input
-            v-model.trim="$v.title.$model"
-            type="text"
-            placeholder="Title"
-          />
-        </label>
-        <label :class="['textarea', { error: $v.message.$error }]">
-          <textarea v-model.trim="$v.message.$model" placeholder="Message" />
-        </label>
+        <div class="form-group" :class="[{ error: $v.title.$error }]">
+          <label>
+            <input
+              v-model.trim="$v.title.$model"
+              type="text"
+              placeholder="Title"
+            />
+          </label>
+          <span v-if="$v.title.$error">This field is required</span>
+        </div>
+
+        <div class="form-group" :class="[{ error: $v.message.$error }]">
+          <label :class="['textarea']">
+            <textarea v-model.trim="$v.message.$model" placeholder="Message" />
+          </label>
+          <span v-if="$v.message.$error">This field is required</span>
+        </div>
+
         <div>
           <button class="btn-secondary">submit</button>
         </div>
@@ -70,7 +96,7 @@
 <script>
 // @flow
 
-import { required } from 'vuelidate/lib/validators'
+import { required, email } from 'vuelidate/lib/validators'
 
 export default {
   name: 'Contact',
@@ -79,7 +105,8 @@ export default {
       required
     },
     email: {
-      required
+      required,
+      email
     },
     company: {
       required
@@ -98,6 +125,16 @@ export default {
       company: undefined,
       title: undefined,
       message: undefined
+    }
+  },
+  methods: {
+    checkForm() {
+      this.$v.$touch()
+      console.log(this.$v.email)
+      if (!this.$v.$anyError) {
+        // actually submit form ...
+        alert('Form is valid and ready to be submitted')
+      }
     }
   }
 }

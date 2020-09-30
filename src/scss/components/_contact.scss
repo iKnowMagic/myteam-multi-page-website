@@ -14,6 +14,10 @@
     background-image: url('~@/assets/images/bg-pattern-contact-2.svg');
     background-position: right -100px bottom -111px;
 
+    @include mq($from: tablet) {
+      padding-left: 104px;
+    }
+
     @include mq($from: desktop) {
       align-items: flex-start;
       padding-top: 20px;
@@ -22,6 +26,9 @@
     }
   }
   .intro-contact {
+    @include mq($from: tablet) {
+      padding-left: 22px;
+    }
     @include mq($from: desktop) {
       padding-top: 20px;
     }
@@ -44,6 +51,11 @@
     margin-top: 37px;
     margin-bottom: 30px;
 
+    @include mq($from: tablet) {
+      margin-top: 21px;
+      margin-bottom: 38px;
+    }
+
     @include mq($from: desktop) {
       margin-top: 30px;
     }
@@ -53,7 +65,7 @@
       align-items: center;
       margin-bottom: 15px;
 
-      @include mq($from: desktop) {
+      @include mq($from: tablet) {
         margin-bottom: 0;
       }
 
@@ -75,6 +87,9 @@
           background-position: left top;
         }
 
+        @include mq($from: tablet) {
+          width: 82px;
+        }
         @include mq($from: desktop) {
           width: 95px;
         }
@@ -90,55 +105,39 @@
   form {
     display: flex;
     flex-direction: column;
+    padding-top: 23px;
+    padding-left: 14px;
 
-    @include mq($from: desktop) {
-      width: 542px;
+    @include mq($from: tablet) {
+      width: 535px;
+      padding-left: 0;
     }
 
-    label {
-      position: relative;
-      margin-top: 25px;
+    input,
+    textarea {
+      width: 100%;
+      padding-bottom: 16px;
+      padding-left: 16px;
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(#fff, 0.8);
+      outline: none;
+      transition: all 0.25s ease;
 
-      span {
-        display: block;
-        padding-left: 16px;
-        font-weight: 600;
-        line-height: 16px;
-        color: rgba(#fff, 0.6);
-      }
-      input,
-      textarea {
-        width: 100%;
-        padding-bottom: 16px;
-        padding-left: 16px;
+      &::placeholder {
         color: #fff;
-        background-color: transparent;
-        border: none;
-        border-bottom: 2px solid rgba(#fff, 0.8);
-        outline: none;
-        transition: all 0.25s ease;
+        opacity: 0.6;
+      }
+    }
 
-        &::placeholder {
-          color: #fff;
-          opacity: 0.6;
-        }
-      }
-      textarea {
-        min-height: 88px;
-        margin-bottom: 16px;
-      }
+    textarea {
+      min-height: 82px;
+      margin-bottom: -11px;
+    }
 
-      &:hover,
-      &:active,
-      &:focus {
-        input,
-        textarea {
-          border-color: $rapture-blue;
-        }
-        span {
-          color: #fff;
-        }
-      }
+    .form-group {
+      margin-bottom: 27px;
 
       &.error {
         input,
@@ -152,28 +151,81 @@
           }
         }
         span {
-          color: $light-coral;
-          opacity: 0.6;
-        }
-        &.textarea {
-          &::after {
-            margin-top: -18px;
-            margin-bottom: 18px;
-          }
-        }
-        &::after {
           display: block;
           padding-left: 16px;
-          margin-top: 4px;
+          margin-top: 7px;
           font-size: 10px;
           font-style: italic;
           font-weight: bold;
           line-height: 13px;
           color: $light-coral;
-          content: 'This field is required';
         }
       }
     }
+
+    // label {
+    //   position: relative;
+    //   margin-top: 25px;
+
+    //   span {
+    //     display: block;
+    //     padding-left: 16px;
+    //     font-weight: 600;
+    //     line-height: 16px;
+    //     color: rgba(#fff, 0.6);
+    //   }
+
+    //   textarea {
+    //     min-height: 88px;
+    //     margin-bottom: 16px;
+    //   }
+
+    //   &:hover,
+    //   &:active,
+    //   &:focus {
+    //     input,
+    //     textarea {
+    //       border-color: $rapture-blue;
+    //     }
+    //     span {
+    //       color: #fff;
+    //     }
+    //   }
+
+    //   &.error {
+    //     input,
+    //     textarea {
+    //       border-color: $light-coral;
+    //       border-width: 1px;
+
+    //       &::placeholder {
+    //         color: $light-coral;
+    //         opacity: 0.6;
+    //       }
+    //     }
+    //     span {
+    //       color: $light-coral;
+    //       opacity: 0.6;
+    //     }
+    //     // &.textarea {
+    //     //   &::after {
+    //     //     margin-top: -18px;
+    //     //     margin-bottom: 18px;
+    //     //   }
+    //     // }
+    //     // &::after {
+    //     //   display: block;
+    //     //   padding-left: 16px;
+    //     //   margin-top: 4px;
+    //     //   font-size: 10px;
+    //     //   font-style: italic;
+    //     //   font-weight: bold;
+    //     //   line-height: 13px;
+    //     //   color: $light-coral;
+    //     //   content: 'This field is required';
+    //     // }
+    //   }
+    // }
 
     button {
       font-weight: 600;
